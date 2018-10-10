@@ -104,7 +104,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 github: publish
-	ghp-import --branch=$(GITHUB_PAGES_MAKE_BRANCH) $(OUTPUTDIR)
+	ghp-import --branch=$(GITHUB_PAGES_MAKE_BRANCH) $(OUTPUTDIR) -c "steffen-schroeder.com"
 	git push -f --no-verify git@github.com:steffenschroeder/steffenschroeder.github.io.git $(GITHUB_PAGES_MAKE_BRANCH):$(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ftp_upload github
