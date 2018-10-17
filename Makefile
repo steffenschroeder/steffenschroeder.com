@@ -24,9 +24,8 @@ CLOUDFILES_API_KEY=my_rackspace_api_key
 CLOUDFILES_CONTAINER=my_cloudfiles_container
 
 DROPBOX_DIR=~/Dropbox/Public/
+GITHUB_PAGES_BRANCH=gh-pages
 
-GITHUB_PAGES_BRANCH=master
-GITHUB_PAGES_MAKE_BRANCH=gh-pages
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -104,7 +103,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 github: publish
-	ghp-import --branch=$(GITHUB_PAGES_MAKE_BRANCH) $(OUTPUTDIR) -c "steffen-schroeder.com"
-	git push -f --no-verify git@github.com:steffenschroeder/steffenschroeder.github.io.git $(GITHUB_PAGES_MAKE_BRANCH):$(GITHUB_PAGES_BRANCH)
+	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ftp_upload github
