@@ -38,6 +38,9 @@ DEFAULT_PAGINATION = 10
 
 
 ## THEME
+COLOR_SCHEME_CSS = 'monokai.css'
+MARKUP = ("markdown",)
+
 
 # Add items to top menu before pages
 MENUITEMS = [('Homepage', '/'),('Categories','/categories.html')]

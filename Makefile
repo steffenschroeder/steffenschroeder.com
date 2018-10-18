@@ -66,7 +66,7 @@ html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 html-dev:
-	$(PELICAN)  $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --relative-urls
+	$(PELICAN)  $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --relative-urls --ignore-cache --autoreload
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
@@ -95,6 +95,8 @@ ifdef PORT
 else
 	$(BASEDIR)/develop_server.sh restart
 endif
+
+local-server: devserver html-dev
 
 stopserver:
 	$(BASEDIR)/develop_server.sh stop
