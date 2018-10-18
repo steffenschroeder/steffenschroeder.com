@@ -108,7 +108,14 @@ publish:
 ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
-github: publish
+updateghpagesbranch:
+	git stash
+	git checkout gh-pages
+	git pull origin gh-pages
+	git checkout -
+	git stash pop
+
+github: updateghpagesbranch publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
