@@ -54,3 +54,5 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/logo.svg': {'path': 'logo.svg'}
 }
+
+CC_LICENSE="CC-BY"
