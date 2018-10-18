@@ -48,11 +48,14 @@ MARKUP = ("markdown",)
 # Add items to top menu before pages
 MENUITEMS = [('Homepage', '/'),('Categories','/categories.html')]
 # Static files
-STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
+
+
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg','extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/logo.svg': {'path': 'logo.svg'}
+    'extra/logo.svg': {'path': 'logo.svg'},
+     'extra/CNAME': {'path': 'CNAME'},
 }
 
 CC_LICENSE="CC-BY"
