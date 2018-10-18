@@ -108,3 +108,6 @@ output/
 .vscode/
 *.pid
 .DS_Store
+
+__pycache__/
+output/
