@@ -4,7 +4,7 @@ python:
 install:
   - 'pip install pipenv'
   - 'pipenv install'
-script: 'pipenv run make html'
+script: 'pipenv run make publish'
 #after_success:
 #  - 'python-codacy-coverage -r coverage.xml'
 deploy:

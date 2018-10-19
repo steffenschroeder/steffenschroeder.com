@@ -1,17 +1,18 @@
 Usage:
-```
-make local-server
+```shell
+make devserver
 ```
 
+
+
 Stop:
-```
+```shell
 make stopserver
 ```
 
 Deploy:
-```
-make github
-```
+`make github` update the `gh-pages`branch automatically
+*Better* just push to master and let travis to the job
 
 
 ### Adding code

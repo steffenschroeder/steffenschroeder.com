@@ -65,9 +65,6 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-html-dev:
-	$(PELICAN)  $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --relative-urls --ignore-cache --autoreload
-
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
@@ -89,14 +86,12 @@ else
 endif
 
 
-devserver:
+devserver: clean
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
 else
 	$(BASEDIR)/develop_server.sh restart
 endif
-
-local-server: devserver html-dev
 
 stopserver:
 	$(BASEDIR)/develop_server.sh stop
@@ -108,15 +103,8 @@ publish:
 ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
-updateghpagesbranch:
-	git stash
-	git checkout gh-pages
-	git pull origin gh-pages
-	git checkout -
-	git stash pop
-
-github: updateghpagesbranch publish
+github: clean publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-.PHONY: html html-dev help clean regenerate serve serve-global devserver stopserver publish ftp_upload github
+.PHONY: html help clean regenerate serve serve-global devserver stopserver publish ftp_upload github
