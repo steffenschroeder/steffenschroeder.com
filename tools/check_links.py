@@ -71,7 +71,7 @@ def main(start_url):
     errors = {}
     for link in tqdm(gathered_links):
         try:
-            session.head(link).raise_for_status()
+            session.get(link).raise_for_status()
         except BaseException as e:
             errors[link] = e
 
