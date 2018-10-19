@@ -9,6 +9,8 @@ markdown = "*"
 ghp-import = "*"
 
 [dev-packages]
+requests-html = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.7"
