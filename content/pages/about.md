@@ -10,7 +10,7 @@ I'm writing software since I am 15 years old.
 Starting with Turbo Basic, over to Visual Basic. 
 I'm passionate about good software design and clean code.
 
-### At day
+### By day
 
 In my day job, I work as Development Expert  at [SAP](http://www.sap.com) building [SAP SuccessFactors Employee Central](https://www.successfactors.com/de_de/solutions/core-human-resources/employee-central.html).
 
