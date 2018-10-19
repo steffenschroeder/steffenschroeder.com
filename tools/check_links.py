@@ -17,7 +17,7 @@ def extract_links(address, session):
         r = session.get(address)
         links = r.html.absolute_links
         yield from links
-    except requests.exceptions.RequestException:
+    except (requests.exceptions.RequestException, requests.exceptions.HTTPError):
         pass
 
 
@@ -72,7 +72,7 @@ def main(start_url):
     for link in tqdm(gathered_links):
         try:
             session.get(link).raise_for_status()
-        except BaseException as e:
+        except (requests.exceptions.RequestException, requests.exceptions.HTTPError) as e:
             errors[link] = e
 
     if errors:
