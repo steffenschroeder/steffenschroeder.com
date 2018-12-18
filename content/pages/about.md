@@ -12,7 +12,7 @@ I'm passionate about good software design and clean code.
 
 ### By day
 
-In my day job, I work as Development Expert  at [SAP](http://www.sap.com) building [SAP SuccessFactors Employee Central](https://www.successfactors.com/de_de/solutions/core-human-resources/employee-central.html).
+In my day job, I work as Development Expert  at [SAP](http://www.sap.com) building [SAP SuccessFactors Employee Central](https://www.successfactors.com/content/ssf-site/en/products-services/core-hr-payroll/employee-central.html).
 
 
 
