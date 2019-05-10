@@ -8,16 +8,20 @@ import requests
 from requests_html import HTMLSession
 from tqdm import tqdm
 
+excludes = ".pdf .jpg .jpeg .gif .rar .zip .xls .bmp".split(" ")
+
 
 def extract_links(address, session):
     """extracts links from a web page"""
-
+    for e in excludes:
+        if address.endswith(e):
+            return []
     try:
         print(f"Gettings links for {address}")
         r = session.get(address)
         links = r.html.absolute_links
         yield from links
-    except (requests.exceptions.RequestException, requests.exceptions.HTTPError):
+    except (requests.exceptions.RequestException, requests.exceptions.HTTPError, UnicodeDecodeError):
         pass
 
 
@@ -31,6 +35,7 @@ def collect_links(url, session):
     visited_links = set()
     external_urls = set()
     malformed_urls = set()
+    visited_url_which_had_sublinks = set()
     seen = set()
     to_visit.put(url)
 
@@ -42,6 +47,7 @@ def collect_links(url, session):
             visited_links.add(address)
 
         for ext_link in extracted:
+            visited_url_which_had_sublinks.add(address)
             parsed_link = urlparse(ext_link)
             if parsed_link.netloc == "":
                 ext_link = urljoin(address, ext_link)
@@ -57,7 +63,7 @@ def collect_links(url, session):
                 malformed_urls.add(ext_link)
                 seen.add(ext_link)
 
-    return visited_links, external_urls, malformed_urls
+    return (visited_links-visited_url_which_had_sublinks), external_urls, malformed_urls
 
 
 def main(start_url):
