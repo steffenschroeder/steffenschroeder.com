@@ -7,7 +7,7 @@ This is the personal page of Steffen Schröder.
 <img alt="Picture of Steffen Schröder" src="https://pbs.twimg.com/profile_images/518866260193329152/1utm5ofv_400x400.jpeg" title="Steffe Schröder"/>
 
 I'm writing software since I am 15 years old. 
-Starting with Turbo Basic, over to Visual Basic. 
+Having started with Turbo Basic, over to Visual Basic, Delphi, C++, Perl, I'm using Java, JavaScript and Python on a professional level. 
 I'm passionate about good software design and clean code.
 
 ### By day
@@ -24,9 +24,10 @@ Some things I have accomplished in the past:
 - Organizing internal Learning Modules on Software Engineering topic
 - Winner of the [HCM Cloud Hackday](https://blogs.sap.com/2014/02/25/reflecting-on-the-hcm-hack-day/)
 - Building the frontend for [Employee Central Position Management](https://blogs.sap.com/2015/03/12/the-successfactors-employee-central-position-management-feature/) and [Company Structure Overview](https://blogs.sap.com/2017/02/24/sap-successfactors-company-structure-overview/)
+- Architect for [Employee Central Position Management](https://blogs.sap.com/2015/03/12/the-successfactors-employee-central-position-management-feature/)
 - Frequent speaker at SAP internal events
 - One of the Youngest participants in the SAP Development Expert Curriculumn
-- Consecutive highest performance ratings and nominations as _Top Talent_/_SAP Catalyst_
+- Consecutive highest performance ratings and nominations as _Top Talent_ / _SAP Catalyst_
 
 At the moment, I'm helping colleagues to ship better software, by coaching, automation, code reviews, introduction of static code checks, contributing to CI/CD pipeline, ...
 
