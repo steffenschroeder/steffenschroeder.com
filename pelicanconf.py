@@ -20,6 +20,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -45,7 +48,10 @@ MARKUP = ("markdown",)
 
 
 # Add items to top menu before pages
-MENUITEMS = [('Homepage', '/'),('Categories','/categories.html')]
+MENUITEMS = [('Home', '/'),
+             ('About', '/pages/about.html'),
+             ]
+
 # Static files
 
 
