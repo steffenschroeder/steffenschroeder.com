@@ -41,6 +41,10 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+ARTICLE_URL = 'posts/{date:%Y}/{slug}.html'
+ARTICLE_SAVE_AS = ARTICLE_URL
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 ## THEME
 COLOR_SCHEME_CSS = 'monokai.css'
@@ -49,7 +53,7 @@ MARKUP = ("markdown",)
 
 # Add items to top menu before pages
 MENUITEMS = [('Home', '/'),
-             ('About', '/pages/about.html'),
+             ('About', '/about'),
              ]
 
 # Static files
