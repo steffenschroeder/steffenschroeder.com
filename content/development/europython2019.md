@@ -11,6 +11,8 @@ Tags: Python, Conference
 I also attended some talks. This is a personal summary for me. Maybe others find this helpful, too.
 (recordings will be attached once available)
 
+<!--
+
 ### Samuel Colvin - Python's Parallel Programming Possibilities - 4 levels of concurrency 
 
 ### Petr Stehlík - The dos and don'ts of task queues
@@ -36,4 +38,4 @@ I also attended some talks. This is a personal summary for me. Maybe others find
 ### Radoslav Georgiev - Software patterns for productive teams
 
 ### Anastasiia Tymoshchuk - The Agile comedy: from hell to paradise
-
+-->
