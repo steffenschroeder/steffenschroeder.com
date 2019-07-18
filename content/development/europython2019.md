@@ -13,7 +13,7 @@ I also attended some talks. This is a personal summary for me. Maybe others find
 
 
 
-#### Samuel Colvin - Python's Parallel Programming Possibilities - 4 levels of concurrency 
+#### Samuel Colvin - Python's Parallel Programming Possibilities - 4 levels of concurrency
 Samuel showed 4 kinds of parallelism:
 
 1. multiple (virtual) machines
@@ -44,7 +44,7 @@ World War II.
 
 
 #### Paul Everitt - Python 1994
-Paul gave an extremely entertaining talk about the early days of python. 
+Paul gave an extremely entertaining talk about the early days of python.
 By showing some news group entries and just telling a whole lot of "funny stories", he took us through a very short-while
 travel though the early days of the python community
 
@@ -52,7 +52,7 @@ travel though the early days of the python community
 <!--
 #### Daniele Procida - The world's cheapest, simplest plotter
 
-#### Raphael Pierzina - Advanced pytest
+#### Raphael Pierzina - Advanced pytespert
 
 #### Mario Corchero - Exceptional Exceptions
 

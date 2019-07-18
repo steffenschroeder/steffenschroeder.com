@@ -2,7 +2,8 @@
 import sys
 from argparse import ArgumentParser
 from queue import Queue
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urljoin
+from urllib.parse import urlparse
 
 import requests
 from requests_html import HTMLSession
@@ -21,7 +22,11 @@ def extract_links(address, session):
         r = session.get(address)
         links = r.html.absolute_links
         yield from links
-    except (requests.exceptions.RequestException, requests.exceptions.HTTPError, UnicodeDecodeError):
+    except (
+        requests.exceptions.RequestException,
+        requests.exceptions.HTTPError,
+        UnicodeDecodeError,
+    ):
         pass
 
 
@@ -63,7 +68,11 @@ def collect_links(url, session):
                 malformed_urls.add(ext_link)
                 seen.add(ext_link)
 
-    return (visited_links-visited_url_which_had_sublinks), external_urls, malformed_urls
+    return (
+        (visited_links - visited_url_which_had_sublinks),
+        external_urls,
+        malformed_urls,
+    )
 
 
 def main(start_url):
@@ -78,7 +87,10 @@ def main(start_url):
     for link in tqdm(gathered_links):
         try:
             session.get(link).raise_for_status()
-        except (requests.exceptions.RequestException, requests.exceptions.HTTPError) as e:
+        except (
+            requests.exceptions.RequestException,
+            requests.exceptions.HTTPError,
+        ) as e:
             errors[link] = e
 
     if errors:
@@ -90,10 +102,14 @@ def main(start_url):
         sys.exit(0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument('url', type=str, help="Enter a url in the form http://steffen-schroeder.com")
-    parser.add_argument("--external", action="store_true", help="Check only links to external sites")
+    parser.add_argument(
+        "url", type=str, help="Enter a url in the form http://steffen-schroeder.com"
+    )
+    parser.add_argument(
+        "--external", action="store_true", help="Check only links to external sites"
+    )
     args = parser.parse_args()
 
     main(args.url)

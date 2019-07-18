@@ -10,7 +10,7 @@ Tags: Internal, pelican
 
 
 and this is the text
-    
+
     :::python
     def clean():
         """Remove generated files"""
@@ -19,7 +19,7 @@ and this is the text
             os.makedirs(DEPLOY_PATH)
             # Hello World
 
-    
+
 And now in java
 
     :::java
@@ -37,7 +37,6 @@ And now in java
 			notifyBoardChanged();
 		}
 	}
-	
+
 
 See the ```notifyBoardChanged()``` - wonderful
-

@@ -6,8 +6,8 @@ This is the personal page of Steffen Schröder.
 
 <img alt="Picture of Steffen Schröder" src="https://pbs.twimg.com/profile_images/518866260193329152/1utm5ofv_400x400.jpeg" title="Steffe Schröder"/>
 
-I'm writing software since I am 15 years old. 
-Having started with Turbo Basic, over to Visual Basic, Delphi, C++, Perl, I'm using Java, JavaScript and Python on a professional level. 
+I'm writing software since I am 15 years old.
+Having started with Turbo Basic, over to Visual Basic, Delphi, C++, Perl, I'm using Java, JavaScript and Python on a professional level.
 I'm passionate about good software design and clean code.
 
 ### By day

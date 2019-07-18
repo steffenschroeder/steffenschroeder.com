@@ -26,7 +26,7 @@ Test
 Pygments without line numbers
 ```
 Normal Text
-    
+
     :::python
     def clean():
         """Remove generated files"""
@@ -36,10 +36,10 @@ Normal Text
             # Hello World
 ```
 
-Pygments with line numbers 
+Pygments with line numbers
 ```
 Normal Text
-    
+
     #!python
     def clean():
         """Remove generated files"""
