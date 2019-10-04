@@ -18,8 +18,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-DISPLAY_CATEGORIES_ON_MENU = True
-DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+
+INDEX_SAVE_AS = 'blog.html'
 
 # Blogroll
 LINKS = (
@@ -53,7 +55,7 @@ MARKUP = ("markdown",)
 
 
 # Add items to top menu before pages
-MENUITEMS = [("Home", "/"), ("About", "/about")]
+MENUITEMS = [("Home", "/"), ("Blog", "/blog")]
 
 # Static files
 
