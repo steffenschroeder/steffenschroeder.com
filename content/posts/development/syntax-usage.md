@@ -1,7 +1,6 @@
 Title: Syntax Usage
 Date: 2018-09-20
 Summary: This is an internal page
-Status: Draft
 Category: Development
 Tags: Internal, pelican
 

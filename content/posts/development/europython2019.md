@@ -1,5 +1,6 @@
 Title: EuroPython 2019
 Date: 2019-07-13
+Status: Published
 slug:europython-2019
 Summary: A Summary of my impressions from EuroPython 2019 in Basel
 Category: Development
