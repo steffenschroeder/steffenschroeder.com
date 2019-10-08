@@ -6,10 +6,11 @@ Category: Development
 Tags: Python, Conference
 
 
+This year I attended my first EuroPython. It took place in Basel which is close to the place I live.
+
 
 ## Talks
-I also attended some talks. This is a personal summary for me. Maybe others find this helpful, too.
-(recordings will be attached once available)
+I attended some talks. This is a personal summary for me. Maybe others find this helpful, too.
 
 
 
@@ -55,22 +56,12 @@ travel though the early days of the python community
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vyz7zdGiPVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!--
-#### Daniele Procida - The world's cheapest, simplest plotter
 
-#### Raphael Pierzina - Advanced pytespert
+#### Raphael Pierzina - Advanced pytest
+Raphael gave an overview on how the pytest plugin system works.
+On the example of automatically adding markers to slow tests, Raphael showed how the pytest hooks work and how one can use this.
 
-#### Mario Corchero - Exceptional Exceptions
+The talks is based on 2 blog posts _Customizing your pytest test suite_ (Part [1](https://raphael.codes/blog/customizing-your-pytest-test-suite-part-1/) & [2](https://raphael.codes/blog/customizing-your-pytest-test-suite-part-2/)).
+I highly recommend watching the talk and reading the corresponding blog posts
 
-
-
-#### Keynote - Luba Elliott - AI in Contemporary Art
-
-#### Keynote - Victor Stinner - Python Performance: Past, Present and Future
-
-#### Lynn Root - Advanced asyncio: Solving Real-world Production Problems
-
-#### Radoslav Georgiev - Software patterns for productive teams
-
-#### Anastasiia Tymoshchuk - The Agile comedy: from hell to paradise
--->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gJtE-anbcww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
