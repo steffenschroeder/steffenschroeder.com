@@ -41,6 +41,7 @@ I try to give something back by volunteering and giving talks:
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Mocks aren&#39;t stubs&quot; by <a href="https://twitter.com/st_schroeder?ref_src=twsrc%5Etfw">@st_schroeder</a> in the last round of lightning talks at <a href="https://twitter.com/hashtag/pyconweb18?src=hash&amp;ref_src=twsrc%5Etfw">#pyconweb18</a>. <a href="https://t.co/Sytzz3dbaB">pic.twitter.com/Sytzz3dbaB</a></p>&mdash; Miroslav Šedivý (@eumiro) <a href="https://twitter.com/eumiro/status/1013437321482592256?ref_src=twsrc%5Etfw">July 1, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+Also I'm mentor at [Jugend hackt](https://jugendhackt.org/).
 ### Get in touch
 If you like to get in touch, you can use:
 
