@@ -24,11 +24,12 @@
 {% endblock header %}
 
 {% block content %}
-    <dl>
+    <ul>
         {% for article in dates %}
-            <dt>{{ article.locale_date }}</dt>
-            <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+            <li>
+                {{ article.locale_date }} - <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            </li>
         {% endfor %}
         <hr>
-    </dl>
+    </ul>
 {% endblock content %}

@@ -54,7 +54,7 @@ CSS_OVERRIDE = 'theme/css/custom.css'
 
 
 # Add items to top menu before pages
-MENUITEMS = [("Home", "/")]
+MENUITEMS = [("Home", "/"), ("Posts", "/archives")]
 
 # Static files
 
