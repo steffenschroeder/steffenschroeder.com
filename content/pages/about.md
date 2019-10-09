@@ -21,7 +21,7 @@ Some things I have accomplished in the past:
 - Building [SAP Business ByDesign](https://www.sap.com/germany/products/business-bydesign.html) Project Management Module as ABAP Developer
 - Trainer and Coach for Java Fundamentals and JavaEE
 - Trainer and Coach for Agile Software Engineering (_TDD_, _Clean Code_, _Refactoring_, _Working Effectivly with Legacy Code_, _Test Isolation_)
-- Organizing internal Learning Modules on Software Engineering topic
+- Organizing internal Learning Modules on Software Engineering topics
 - Winner of the [HCM Cloud Hackday](https://blogs.sap.com/2014/02/25/reflecting-on-the-hcm-hack-day/)
 - Building the frontend for [Employee Central Position Management](https://blogs.sap.com/2015/03/12/the-successfactors-employee-central-position-management-feature/) and [Company Structure Overview](https://blogs.sap.com/2017/02/24/sap-successfactors-company-structure-overview/)
 - Architect for [Employee Central Position Management](https://blogs.sap.com/2015/03/12/the-successfactors-employee-central-position-management-feature/)
