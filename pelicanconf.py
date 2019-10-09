@@ -50,6 +50,7 @@ PAGE_SAVE_AS = "{slug}/index.html"
 ## THEME
 COLOR_SCHEME_CSS = "monokai.css"
 MARKUP = ("markdown",)
+CSS_OVERRIDE = 'theme/css/custom.css'
 
 
 # Add items to top menu before pages
