@@ -8,6 +8,8 @@ PATH = "content"
 TIMEZONE = "Europe/Paris"
 
 DEFAULT_LANG = "en"
+LOCALE = ('usa',  'en_US')
+DEFAULT_DATE_FORMAT = '%d %B %Y'
 
 THEME = "theme"
 
