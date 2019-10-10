@@ -24,12 +24,14 @@
 {% endblock header %}
 
 {% block content %}
-    <ul>
-        {% for article in dates %}
-            <li>
-                {{ article.locale_date }} - <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-            </li>
-        {% endfor %}
-        <hr>
-    </ul>
+    {% for year, year_group in dates|groupby('date.year')|reverse %}
+        <h4 class="date">{{ (year_group|first).date|strftime('%Y') }}</h4>
+        <div class="post archives">
+            <ul>
+                {% for article in year_group %}
+                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+     {% endfor %}
 {% endblock content %}
