@@ -38,15 +38,10 @@ Through the [RaspberryPi](https://www.raspberrypi.org/), I came to [Python](http
 
 For the community, I like to attend Python conferences like [PyConDE](https://de.pycon.org/) and [EuroPython]({filename}/development/europython2019.md).
 I try to give something back by volunteering and giving talks:
-#### Mocks aren't stubs
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Mocks aren&#39;t stubs&quot; by <a href="https://twitter.com/st_schroeder?ref_src=twsrc%5Etfw">@st_schroeder</a> in the last round of lightning talks at <a href="https://twitter.com/hashtag/pyconweb18?src=hash&amp;ref_src=twsrc%5Etfw">#pyconweb18</a>. <a href="https://t.co/Sytzz3dbaB">pic.twitter.com/Sytzz3dbaB</a></p>&mdash; Miroslav Šedivý (@eumiro) <a href="https://twitter.com/eumiro/status/1013437321482592256?ref_src=twsrc%5Etfw">July 1, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-#### Clean Code
-
-<iframe width="1024" height="576" src="https://media.ccc.de/v/jh19-hd-1002-clean_code/oembed" frameborder="0" allowfullscreen></iframe>
-
-Also I'm mentor at [Jugend hackt](https://jugendhackt.org/).
+Also I'm mentor at [Jugend hackt](https://jugendhackt.org/) (see my lightning talk [here](https://media.ccc.de/v/jh19-hd-1002-clean_code)).
 ### Get in touch
 If you like to get in touch, you can use:
 
