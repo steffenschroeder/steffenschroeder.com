@@ -12,9 +12,8 @@ I'm passionate about good software design and clean code.
 
 ### By day
 
-In my day job, I work as Development Architect  at [SAP](http://www.sap.com) building [SAP SuccessFactors Employee Central](https://www.successfactors.com/content/ssf-site/en/products-services/core-hr-payroll/employee-central.html).
-
-
+In my day job, I work as Senior Software Engineer at [BlueYonder](https://blueyonder.com/) in Hamburg. I help preparing masses of data for Machine Learning. That help compnies
+make better decisions in the their whole supply chain.
 
 Some things I have accomplished in the past:
 
