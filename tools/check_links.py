@@ -12,13 +12,13 @@ from tqdm import tqdm
 excludes = ".pdf .jpg .jpeg .gif .rar .zip .xls .bmp".split(" ")
 
 
-def extract_links(address, session):
+def extract_links(address: str, session: HTMLSession) -> None:
     """extracts links from a web page"""
     for e in excludes:
         if address.endswith(e):
             return []
     try:
-        print(f"Gettings links for {address}")
+        print(f"Getting links for {address}")
         r = session.get(address)
         links = r.html.absolute_links
         yield from links
@@ -30,7 +30,7 @@ def extract_links(address, session):
         pass
 
 
-def collect_links(url, session):
+def collect_links(url: str, session: HTMLSession):
     """gathers links, returns sets of internal and external links"""
     url__netloc = urlparse(url).netloc
     if not url__netloc.startswith("www."):
@@ -50,6 +50,8 @@ def collect_links(url, session):
         if address not in visited_links:
             extracted = extract_links(address, session)
             visited_links.add(address)
+        else:
+            extracted = set()
 
         for ext_link in extracted:
             visited_url_which_had_sublinks.add(address)
