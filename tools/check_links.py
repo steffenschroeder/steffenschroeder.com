@@ -2,8 +2,8 @@
 import sys
 from argparse import ArgumentParser
 from queue import Queue
-from urllib.parse import urljoin
-from urllib.parse import urlparse
+from typing import Generator
+from urllib.parse import urljoin, urlparse
 
 import requests
 from requests_html import HTMLSession
@@ -12,7 +12,7 @@ from tqdm import tqdm
 excludes = ".pdf .jpg .jpeg .gif .rar .zip .xls .bmp".split(" ")
 
 
-def extract_links(address: str, session: HTMLSession) -> None:
+def extract_links(address: str, session: HTMLSession) -> Generator[str, None, list]:
     """extracts links from a web page"""
     for e in excludes:
         if address.endswith(e):
