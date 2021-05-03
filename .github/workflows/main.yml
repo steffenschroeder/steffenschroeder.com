@@ -10,6 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Pelican for GitHub Pages
-      uses: nelsonjchen/gh-pages-pelican-action@0.1.4
+      uses: nelsonjchen/gh-pages-pelican-action@0.1.10
       env:
-        GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GH_PAGES_CNAME: none #take CNAME from CNAME file
