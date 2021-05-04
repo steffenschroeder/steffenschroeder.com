@@ -33,7 +33,7 @@ Description of the talk
 > Often developers feel misunderstood while managers are overwhelmed with technical details. 
 >In this talk I'll present how both world can get a better understanding with each other to collaborate better - and without the pains.
 
-I really enjoyed Ingo's talk and also a small chat with him afterwards. The emphasis an stakeholder management and to have
+I really enjoyed Ingo's talk and also a small chat with him afterwards. The emphasis on stakeholder management and to have
 a common language is very important. One point I like to add from my experience is, sometimes it's with building a 
 prototype. One might not get management's buy-in for a vague idea or research project. I built a lot of tools after work
 and on the weekends which emerged into widely used (1000+ users) tools. 
